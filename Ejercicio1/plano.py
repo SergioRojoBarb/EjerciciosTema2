@@ -28,7 +28,7 @@ class Punto():
         if self.coordenada_x_origen and self.coordenada_y_origen:
             print("Tu punto está en el Origen 'O', punto(0,0)")
         else:
-            print("Tu punto está en las coordenadas: ", "(",self.coordenada_x, self.coordenada_y,")")
+            return("Tu punto está en las coordenadas: ", "(",self.coordenada_x, self.coordenada_y,")")
 
 
     def coordenar_xy(self):
@@ -45,10 +45,7 @@ class Punto():
             print("Tu coordenada y es la ( ,", coordenada_y, ")" )
 
         coordenadas_punto = (coordenada_x, coordenada_y)
-        final= print("Tu punto es el ", coordenadas_punto)
-
-        return final
-        
+        return("Tu punto es el ", coordenadas_punto)
     
 '''
 from Ejercicio1.introducir import numero
