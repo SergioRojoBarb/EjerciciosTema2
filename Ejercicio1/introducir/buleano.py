@@ -1,4 +1,4 @@
-
+'''
 from Ejercicio1 import introducir
 
 
@@ -17,4 +17,4 @@ def solicitar_introducir_verdadero_o_falso(invite):
         return input(invite).lower() in VERDADERO
     except:
         return False
-        
+'''      

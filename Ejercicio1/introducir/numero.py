@@ -1,4 +1,4 @@
-
+'''
 import sys
 
 MIN = 0
@@ -32,7 +32,7 @@ def solicitar_introducir_numero_Y(invite):
         else:
             return datoIntroducidoy
 
-
+'''
 '''
 def solicitar_introducir_numero_extremo(invite, minimum=MIN, maximum=MAX):
     invite="{} entre {} y {} incluídos".format(invite, minimum, maximum)
