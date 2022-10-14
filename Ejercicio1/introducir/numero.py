@@ -2,7 +2,7 @@
 import sys
 
 MIN = 0
-MAX = 9
+MAX = 1000
 
 def solicitar_introducir_numero_X(invite):
     while True:
@@ -13,7 +13,7 @@ def solicitar_introducir_numero_X(invite):
             datoIntroducidox = int(datoIntroducidox)
 
         except:
-            print("Solo estan autorizados los caracteres [0-9].", file=sys.stderr)
+            print("Solo estan autorizados los caracteres [0-1000].", file=sys.stderr)
 
         else:
             return datoIntroducidox
