@@ -1,27 +1,34 @@
 
-from curses.ascii import isdigit
-
-
 class Punto():
 
     coordenada_x_origen = 0
     coordenada_y_origen = 0
 
     num_a = int(input("Introduce la coordenada x de tu punto: "))
+    if num_a == int:
+        print("Tu coordenada x es", num_a)
+    else:
+        print("Introduzca solo valores numéricos")
+    pass
+
+
+
+
     coordenada_x = num_a
-    while (num_a.isdigit()==False):
+    if num_a != int:
         print("Introduce sólo valores numéricos")
+    else:
         num_a = int(input("Introduce la coordenada x de tu punto: "))
         coordenada_x = num_a
-        break
-
+    
+    
     num_b = int(input("Introduce la coordenada y de tu punto: "))
     coordenada_y = num_b
-    while (num_b.isdigit()==False):
+    if num_b!=int:
         print("Introduce sólo valores numéricos")
+    else:
         num_b = int(input("Introduce la coordenada x de tu punto: "))
         coordenada_y = num_b
-        break
 
 
     def origen(self):
