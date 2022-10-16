@@ -1,4 +1,7 @@
 
+from operator import ne
+
+
 class lista:
     def __init__(self, list):
         self.list = list
@@ -49,8 +52,13 @@ class lista:
 
 
 list = [1,2,8,3,5,9,4,6,7]
-l0= mod_list(list)
-
-
-
-                    
+l0= lista(list)
+print(l0.mod)
+print(l0.orden)
+print(l0.delete)
+print(l0.sum)
+print(l0.add)
+print(list)
+new = l0.add()
+print(new[0])
+print(new[0] == sum(new[1:]))
